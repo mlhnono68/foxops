@@ -235,7 +235,7 @@ jobs:
       - run: python -m poetry install
       - run: make -C docs html
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
           name: DocumentationHTML
           path: docs/build/html/
